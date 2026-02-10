@@ -1,0 +1,35 @@
+
+==================================================
+FITNESS TRACKER API
+==================================================
+
+Available endpoints:
+------------------------------
+GET  /                   - API information
+GET  /api/health         - Health check
+POST /api/auth/register  - Register new user
+POST /api/auth/login     - Login
+GET  /api/auth/profile   - Get user profile (requires auth)
+GET  /api/auth/check     - Check authentication (requires auth)
+POST /api/activities     - Log activity (requires auth)
+GET  /api/activities     - Get activities (requires auth)
+GET  /api/stats          - Get statistics (requires auth)
+POST /api/goals          - Set goal (requires auth)
+GET  /api/goals          - Get goals (requires auth)
+------------------------------
+
+Starting server on http://localhost:5000
+==================================================
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [09/Feb/2026 19:13:38] "OPTIONS /api/activities HTTP/1.1" 200 -
+127.0.0.1 - - [09/Feb/2026 19:13:38] "[31m[1mPOST /api/activities HTTP/1.1[0m" 422 -
+127.0.0.1 - - [09/Feb/2026 19:14:56] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [09/Feb/2026 19:14:56] "[35m[1mPOST /api/activities HTTP/1.1[0m" 201 -
+127.0.0.1 - - [09/Feb/2026 19:15:07] "[35m[1mPOST /api/activities HTTP/1.1[0m" 201 -
+127.0.0.1 - - [09/Feb/2026 19:15:28] "[31m[1mPOST /api/activities HTTP/1.1[0m" 422 -
+127.0.0.1 - - [09/Feb/2026 19:15:40] "GET /api/health HTTP/1.1" 200 -
